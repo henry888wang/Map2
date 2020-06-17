@@ -1,0 +1,53 @@
+<meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Mali:wght@600&family=Parisienne&display=swap" rel="stylesheet">
+<link href="css/styles.css" rel="stylesheet" />
+
+<body>
+<div>
+
+<div style="overflow:scroll;width:100%;height:100%;position: relative;">
+ <div id="h1">LIVE WITH NO EXCUSES AND TRAVEL WITH NO REGRETS</div>
+<button id="btnx" onclick="blah()" class="btnx" style="position:absolute;left:1000px;top:600px;z-index:70;">start</button>     
+<div  id="map">
+<h2 id="h2" style="position:absolute;left:30px;top:200px;font-size:40px;display:none;">Click the contury you want to go to</h2>
+<button 
+onclick="france.pause() ;france.currentTime = '0';england.pause() ;england.currentTime = '0';iceland.pause() ;iceland.currentTime = '0';window.open('https://henry888wang.github.io/Swissland/'); "            
+        class="btn" id="div1" style="position:absolute;left:800px;top:800px;animation: swissland 2s 1;">
+瑞士
+</button>
+<button onclick="iceland.play();france.pause() ;france.currentTime = '0';england.pause() ;england.currentTime = '0';window.open('https://henry888wang.github.io/Iceland/') " class="btn" id="div2" style="position:absolute;left:150px;top:80px;animation: iceland 2s 1;">
+冰島
+</button>
+<button 
+ onclick="france.pause() ;france.currentTime = '0';england.pause() ;england.currentTime = '0';iceland.pause() ;iceland.currentTime = '0';window.open('https://henry888wang.github.io/Morocco/') "       
+        class="btn" id="div3" style="position:absolute;left:380px;top:1250px;animation: morocco 2s 1;">
+摩洛哥
+</button>
+<button onclick="england.play() ;france.pause() ;france.currentTime = '0';iceland.pause() ;iceland.currentTime = '0';window.open('https://henry888wang.github.io/England/') " class="btn" id="div4" style="position:absolute;left:500px;top:600px;animation: england 2s 1;">
+英國
+</button>
+<button onclick="france.play();england.pause() ;england.currentTime = '0';iceland.pause() ;iceland.currentTime = '0';window.open('https://henry888wang.github.io/France/') " class="btn" id="div5" style="position:absolute;left:620px;top:810px;">
+法國
+</button>
+
+</div>
+</div>
+
+</div>
+
+
+<audio id="england">
+        <source src="assets/audio/england.mp3" type="audio/mp3">
+    </audio>
+    <audio id="france">
+            <source src="assets/audio/france.mp3" type="audio/mp3">
+    </audio>
+    <audio id="iceland">
+                <source src="assets/audio/iceland.mp3" type="audio/mp3">
+    </audio>
+<br>
+<br>
+<script src="js/scripts.js"></script>
+
+</body>
